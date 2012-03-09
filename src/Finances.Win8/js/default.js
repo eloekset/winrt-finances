@@ -16,6 +16,21 @@
             }
             WinJS.UI.processAll();
         }
+        else if (eventObject.detail.kind == Windows.ApplicationModel.Activation.ActivationKind.shareTarget) {
+            var shareOperation = eventObject.detail.shareOperation;
+            id("title").innerText = shareOperation.data.properties.title;
+            id("description").innerText = shareOperation.data.properties.description;
+
+            // Display a thumbnail if available
+            if (shareOperation.data.properties.thumbnail) {
+                shareOperation.data.properties.thumbnail.openReadAsync().then(function (thumbnailStream) {
+                    var thumbnailBlob = MSApp.createBlobFromRandomAccessStream(thumbnailStream.contentType, thumbnailStream);
+                    var thumbnailUrl = URL.createObjectURL(thumbnailBlob, false);
+                    id("thumbnailImage").src = thumbnailUrl;
+                    id("thumbnailArea").className = "unhidden";
+                });
+            }
+        }
     };
 
     app.oncheckpoint = function (eventObject) {
@@ -26,6 +41,10 @@
         // asynchronous operation before your application is suspended, call
         // eventObject.setPromise(). 
     };
+
+    function id(elementId) {
+        return document.getElementById(elementId);
+    }
 
     app.start();
 })();

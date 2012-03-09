@@ -54,6 +54,7 @@
     </AppxManifest>
     <Content Include="css\goals.css" />
     <Content Include="css\reports.css" />
+    <Content Include="css\shareTarget.css" />
     <Content Include="css\transactions.css" />
     <Content Include="default.html" />
     <Content Include="css\default.css" />
@@ -61,6 +62,7 @@
     <None Include="Finances.Win8_TemporaryKey.pfx" />
     <Content Include="html\goals.html" />
     <Content Include="html\reports.html" />
+    <Content Include="html\shareTarget.html" />
     <Content Include="html\transactions.html" />
     <Content Include="html\home.html" />
     <Content Include="images\logo.png" />
@@ -69,6 +71,7 @@
     <Content Include="images\storelogo.png" />
     <Content Include="js\goals.js" />
     <Content Include="js\reports.js" />
+    <Content Include="js\shareTarget.js" />
     <Content Include="js\transactions.js" />
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
