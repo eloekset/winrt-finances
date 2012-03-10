@@ -59,10 +59,10 @@
     <Content Include="default.html" />
     <Content Include="css\default.css" />
     <Content Include="css\home.css" />
+    <Content Include="shareTarget.html" />
     <None Include="Finances.Win8_TemporaryKey.pfx" />
     <Content Include="html\goals.html" />
     <Content Include="html\reports.html" />
-    <Content Include="html\shareTarget.html" />
     <Content Include="html\transactions.html" />
     <Content Include="html\home.html" />
     <Content Include="images\logo.png" />

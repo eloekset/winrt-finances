@@ -21,13 +21,13 @@
         <SplashScreen Image="images\splashscreen.png" />
       </VisualElements>
       <Extensions>
-        <Extension Category="windows.shareTarget" StartPage="html\shareTarget.html">
+        <Extension Category="windows.shareTarget" StartPage="shareTarget.html">
           <ShareTarget>
             <SupportedFileTypes>
               <FileType>.png</FileType>
               <FileType>.jpg</FileType>
             </SupportedFileTypes>
-            <DataFormat>Bitmap</DataFormat>
+            <DataFormat>bitmap</DataFormat>
           </ShareTarget>
         </Extension>
       </Extensions>
