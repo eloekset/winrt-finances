@@ -54,12 +54,10 @@
     </AppxManifest>
     <Content Include="css\goals.css" />
     <Content Include="css\reports.css" />
-    <Content Include="css\shareTarget.css" />
     <Content Include="css\transactions.css" />
     <Content Include="default.html" />
     <Content Include="css\default.css" />
     <Content Include="css\home.css" />
-    <Content Include="shareTarget.html" />
     <None Include="Finances.Win8_TemporaryKey.pfx" />
     <Content Include="html\goals.html" />
     <Content Include="html\reports.html" />
@@ -72,7 +70,6 @@
     <Content Include="js\data\winrt.js" />
     <Content Include="js\goals.js" />
     <Content Include="js\reports.js" />
-    <Content Include="js\shareTarget.js" />
     <Content Include="js\transactions.js" />
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
